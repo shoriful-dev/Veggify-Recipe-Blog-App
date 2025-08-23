@@ -6,5 +6,6 @@ const ItemController = require('../controller/itemController');
 
 router.get('/all-items', ItemController.getAllItems);
 router.get('/items', ItemController.getSeachedItems);
+router.get('/items/:id', ItemController.getSingleItem);
 
 module.exports = router;

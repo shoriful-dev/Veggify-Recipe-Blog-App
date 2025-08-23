@@ -18,4 +18,14 @@ const getSeachedItems = async (req, res) => {
   }
 };
 
-module.exports = { getAllItems, getSeachedItems };
+  const getSingleItem = async (req, res) => {
+    const { id } = req.params;
+    try {
+      const item = await Item.findById(id);
+      res.json(item);
+    } catch (error) {
+      res.status(500).json({ message: 'Not found any item' });
+    }
+  };
+
+module.exports = { getAllItems, getSeachedItems, getSingleItem };
