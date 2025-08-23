@@ -21,8 +21,10 @@ main().then(() => console.log('MongoDB Connected Successfully')).catch(err => co
 
 // routes
 const ItemRoutes = require('./src/routes/itemRoute');
+const CategoryRoutes = require('./src/routes/categoryRoute');
 
 app.use('/api', ItemRoutes);
+app.use('/api', CategoryRoutes);
 
 app.listen(port, () => {
   console.log(`This port is running on ${port} port`)
