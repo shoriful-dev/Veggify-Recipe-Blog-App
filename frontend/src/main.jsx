@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home/Home.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import CategoryPage from './pages/category/CategoryPage.jsx';
+import Search from './pages/Search.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <Home /> },
       { path: 'categories/:category', element: <CategoryPage /> },
+      {path: '/search', element: <Search/>},
     ],
   },
 ]);
