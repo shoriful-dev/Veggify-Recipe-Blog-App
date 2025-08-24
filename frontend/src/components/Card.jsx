@@ -26,7 +26,7 @@ const Card = ({ item }) => {
         <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
           <img className="rounded-t-lg" src={item?.thumbnail_image} alt="" />
           <div className="py-6 px-5 rounded-lg bg-white">
-            <Link to={`/items/${item._id}`}>
+            <Link to={`/items/${item?._id}`}>
             <h1 className="text-gray-700 font-bold text-2xl mb-8 hover:text-gray-900 hover:cursor-pointer">
               {item?.name}
             </h1>
