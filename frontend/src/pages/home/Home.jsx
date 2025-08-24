@@ -6,6 +6,7 @@ import LatestRecipe from './LatestRecipe';
 import NewsLetter from './NewsLetter';
 import AboutSection from './AboutSection';
 import CompanyLogo from './CompanyLogo';
+import Subscribtion from './Subscribtion';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
           <NewsLetter />
           <AboutSection />
           <CompanyLogo />
+          <Subscribtion />
       </div>
     </>
   );
