@@ -9,6 +9,7 @@ import CategoryPage from './pages/category/CategoryPage.jsx';
 import Search from './pages/Search.jsx';
 import SingleProduct from './pages/products/SingleProduct.jsx';
 import Recipe from './pages/products/Recipe.jsx';
+import ResourcePage from './pages/resources/ResourcePage.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/recipes',
         element: <Recipe />,
+      },
+      {
+        path: '/resources',
+        element: <ResourcePage />,
       },
     ],
   },
